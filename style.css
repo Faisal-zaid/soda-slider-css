@@ -248,3 +248,15 @@ header nav a{
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
 }
+
+.carousel.effect{
+    --transform:300px;
+}
+.carousel.effect .item.active{
+    --transform-from: calc(var(--transform)*-1);
+    -transform-to: 0px;
+}
+.carousel.effect .item{
+    --transform-from:0;
+    -o-transform-to: var(--transform);
+}
